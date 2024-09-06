@@ -27,7 +27,7 @@ export default function CheckOut() {
     setIsLoading(true);
     let url = `https://ecommerce.routemisr.com/api/v1/orders/${cartId}`;
     if (isOnlinePayment) {
-      url = `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=http://localhost:5173`;
+      url = `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://ecommerce-kj3joilj9-abdelrahmans-projects-2152ccdf.vercel.app/`;
     }
     // console.log(paymentFormik.values);
     const data = await payment(url, paymentFormik.values);
@@ -42,7 +42,7 @@ export default function CheckOut() {
       setApiError(data?.response?.data?.statusMsg);
       // console.log(data?.response?.data?.statusMsg);
     }
-    setIsLoading(false)
+    setIsLoading(false);
   }
 
   // YUP Validation
