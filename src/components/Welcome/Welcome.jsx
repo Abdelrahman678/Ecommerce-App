@@ -17,7 +17,7 @@ export default function Welcome() {
       </Helmet>
       {/* For Name Helmet End */}
       <div className="main-bg-img custom-height flex justify-center items-center flex-col ">
-        <h1 className="text-5xl font-extrabold text-green-700 mb-2">
+        <h1 className="text-5xl text-center font-extrabold text-green-700 mb-2">
           Welcome To FreshCart
         </h1>
         <h3 className="text-xl font-extrabold text-green-700 mb-4">
